@@ -1,0 +1,10 @@
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame.Krypton\bin\x86\Debug\Gleed2D.InGame.Krypton.dll
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame.Krypton\bin\x86\Debug\Gleed2D.InGame.Krypton.pdb
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame.Krypton\bin\x86\Debug\Gleed2D.InGame.dll
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame.Krypton\bin\x86\Debug\Krypton.dll
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame.Krypton\bin\x86\Debug\Gleed2D.InGame.pdb
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame.Krypton\bin\x86\Debug\Krypton.pdb
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame.Krypton\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame.Krypton\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame.Krypton\obj\x86\Debug\Gleed2D.InGame.Krypton.dll
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame.Krypton\obj\x86\Debug\Gleed2D.InGame.Krypton.pdb

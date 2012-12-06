@@ -1,0 +1,6 @@
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame\bin\x86\Release\Gleed2D.InGame.dll
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame\bin\x86\Release\Gleed2D.InGame.pdb
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame\obj\x86\Release\Gleed2D.InGame.dll
+C:\Users\Dustin\Desktop\Gleed2D-master\src\Gleed2D.InGame\obj\x86\Release\Gleed2D.InGame.pdb
