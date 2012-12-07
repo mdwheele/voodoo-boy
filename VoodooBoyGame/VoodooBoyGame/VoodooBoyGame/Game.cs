@@ -40,7 +40,7 @@ namespace VoodooBoyGame
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferWidth = 1280;
             graphics.PreferredBackBufferHeight = 720;
-            graphics.IsFullScreen = false;
+            graphics.IsFullScreen = true;
                         
             Window.Title = "Voodoo Boy Alpha";
 

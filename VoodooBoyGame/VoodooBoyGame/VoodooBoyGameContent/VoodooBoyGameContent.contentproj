@@ -109,11 +109,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Characters\Victor\walking.anim">
-      <Name>walking</Name>
-      <Processor>AnimationProcessor</Processor>
+    <Compile Include="Characters\Victor\basic-attack.anim">
+      <Name>basic-attack</Name>
       <Importer>AnimationImporter</Importer>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Characters\Victor\resting.anim">
+      <Name>resting</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Characters\Victor\running.anim">
+      <Name>running</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
     </Compile>
     <None Include="Levels\debug-level.gleed">
       <Name>debug-level</Name>
@@ -195,13 +204,38 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Characters\Victor\blank.png">
+      <Name>blank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
     <Compile Include="Characters\Victor\body.png">
       <Name>body</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+    <Compile Include="Characters\Victor\dagger-slash1.png">
+      <Name>dagger-slash1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Characters\Victor\dagger-slash2.png">
+      <Name>dagger-slash2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Characters\Victor\dagger-slash3.png">
+      <Name>dagger-slash3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
     <Compile Include="Characters\Victor\foot.png">
       <Name>foot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Characters\Victor\head-smile.png">
+      <Name>head-smile</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -215,18 +249,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Characters\Victor\leg.png">
-      <Name>leg</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Victor\right-arm-lower.png">
-      <Name>right-arm-lower</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Victor\right-arm-upper.png">
-      <Name>right-arm-upper</Name>
+    <Compile Include="Characters\Victor\right-arm.png">
+      <Name>right-arm</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

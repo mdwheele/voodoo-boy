@@ -295,7 +295,7 @@ namespace VoodooBoyGame
                    Matrix.CreateScale(Global.Camera.Zoom) *
                    Matrix.CreateRotationZ(Global.Camera.Rotation);
             
-            //debug.RenderDebugData(ref projection, ref view);
+            debug.RenderDebugData(ref projection, ref view);
         }
     }
 }
