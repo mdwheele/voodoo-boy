@@ -1,1 +1,2 @@
 C:\Users\Dustin\Desktop\VoodooBoyGame\VoodooBoyGame\VoodooBoyGameContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGameContent\obj\x86\Debug\ResolveAssemblyReference.cache

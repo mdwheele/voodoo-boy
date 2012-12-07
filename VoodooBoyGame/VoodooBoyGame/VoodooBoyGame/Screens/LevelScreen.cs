@@ -30,6 +30,8 @@ namespace VoodooBoyGame
         private RenderSystem renderSystem;
         private PhysicsSystem physicsSystem;
         private WalkableBodySystem walkableBodySystem;
+        private AnimationUpdateSystem animationUpdateSystem;
+        private AnimationRenderSystem animationRenderSystem;
 
         private DebugViewXNA debug;
         #endregion
@@ -102,6 +104,8 @@ namespace VoodooBoyGame
             renderSystem = systemManager.SetSystem(new RenderSystem(), ExecutionType.Draw);
             physicsSystem = systemManager.SetSystem(new PhysicsSystem(PhysicsWorld), ExecutionType.Update);
             walkableBodySystem = systemManager.SetSystem(new WalkableBodySystem(PhysicsWorld), ExecutionType.Update);
+            animationUpdateSystem = systemManager.SetSystem(new AnimationUpdateSystem(), ExecutionType.Update);
+            animationRenderSystem = systemManager.SetSystem(new AnimationRenderSystem(), ExecutionType.Draw);
 
             systemManager.InitializeAll();
 
@@ -213,7 +217,6 @@ namespace VoodooBoyGame
 
             float hori = input.CurrentGamepadState.ThumbSticks.Left.X;
             float vert = -input.CurrentGamepadState.ThumbSticks.Left.Y;
-            Global.Camera.Move(new Vector2(hori * 10, vert * 10));
 
             if (input.IsHeldDown(Keys.Right)) { Global.Camera.Move(new Vector2(10, 0)); }
             if(input.IsHeldDown(Keys.Left)){Global.Camera.Move(new Vector2(-10, 0));}
@@ -277,9 +280,7 @@ namespace VoodooBoyGame
                 layer.Value.Draw();
             }
 
-            Global.SpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, null, null, null, null, Global.Camera.CameraMatrix);
             EntityWorld.SystemManager.UpdateSynchronous(ExecutionType.Draw);
-            Global.SpriteBatch.End();
 
             Global.SpriteBatch.Begin();
             Global.SpriteBatch.DrawString(Global.Fonts["DebugBuild"], String.Format("Level Testbed\n---------------------\n\nLSTICK - Move Camera\nLTRIGGER / RTRIGGER(A / Z) - Rotate Camera\nRSTICKUP/DOWN(PAGEUP/DOWN) - Zoom +/-\nA(SPACE) - Spawn balls at Center Screen\nB(ESC) - Back to Main Menu\n\nZoom Level: {0}\nCamera Position: {1}\nPhysics Bodies: {2}\nEntities: {3}", Global.Camera.Zoom, Global.Camera.Position, PhysicsWorld.BodyList.Count-6, EntityWorld.EntityManager.ActiveEntitiesCount), new Vector2(10, 10), Color.Black);
@@ -294,7 +295,7 @@ namespace VoodooBoyGame
                    Matrix.CreateScale(Global.Camera.Zoom) *
                    Matrix.CreateRotationZ(Global.Camera.Rotation);
             
-            debug.RenderDebugData(ref projection, ref view);
+            //debug.RenderDebugData(ref projection, ref view);
         }
     }
 }

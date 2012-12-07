@@ -45,7 +45,7 @@ namespace VoodooBoyGame
 
             body = BodyFactory.CreateRectangle(physics, width, upperBodyHeight, mass / 2);
             body.BodyType = BodyType.Dynamic;
-            body.Restitution = 0.3f;
+            body.Restitution = -0.3f;
             body.Friction = 0.5f;
 
             //shift body up a bit to keep the new object's center correct.
@@ -60,7 +60,7 @@ namespace VoodooBoyGame
             //create wheel as wide as whole object
             wheel = BodyFactory.CreateCircle(physics, (float)width / 2, mass / 2);
             wheel.BodyType = BodyType.Dynamic;
-            wheel.Restitution = 0.3f;
+            wheel.Restitution = -0.3f;
             wheel.Friction = float.MaxValue;
 
             //position wheel at bottom of body, centered

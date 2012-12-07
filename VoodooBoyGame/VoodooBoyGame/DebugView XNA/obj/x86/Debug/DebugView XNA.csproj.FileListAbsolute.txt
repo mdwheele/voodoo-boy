@@ -8,3 +8,13 @@ C:\Users\Dustin\Desktop\VoodooBoyGame\VoodooBoyGame\DebugView XNA\obj\x86\Debug\
 C:\Users\Dustin\Desktop\VoodooBoyGame\VoodooBoyGame\DebugView XNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Dustin\Desktop\VoodooBoyGame\VoodooBoyGame\DebugView XNA\obj\x86\Debug\DebugViewXNA.dll
 C:\Users\Dustin\Desktop\VoodooBoyGame\VoodooBoyGame\DebugView XNA\obj\x86\Debug\DebugViewXNA.pdb
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DebugView XNA\bin\x86\Debug\Content\font.xnb
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DebugView XNA\bin\x86\Debug\DebugViewXNA.dll
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DebugView XNA\bin\x86\Debug\DebugViewXNA.pdb
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DebugView XNA\bin\x86\Debug\FarseerPhysicsXNA.dll
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DebugView XNA\bin\x86\Debug\FarseerPhysicsXNA.pdb
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DebugView XNA\bin\x86\Debug\FarseerPhysicsXNA.xml
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DebugView XNA\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DebugView XNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DebugView XNA\obj\x86\Debug\DebugViewXNA.dll
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DebugView XNA\obj\x86\Debug\DebugViewXNA.pdb

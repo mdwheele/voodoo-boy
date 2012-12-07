@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Artemis", "VoodooBoyGame\Ar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebugView XNA", "VoodooBoyGame\DebugView XNA\DebugView XNA.csproj", "{FC7845FA-13FE-4FF8-822A-A577F3F59B00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeminaRuntime", "VoodooBoyGame\DeminaRuntime\DeminaRuntime.csproj", "{E1D2A728-135E-4D2C-A33B-6B751F9BC746}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -107,6 +109,16 @@ Global
 		{FC7845FA-13FE-4FF8-822A-A577F3F59B00}.Release|x86.ActiveCfg = Release|x86
 		{FC7845FA-13FE-4FF8-822A-A577F3F59B00}.Release|x86.Build.0 = Release|x86
 		{FC7845FA-13FE-4FF8-822A-A577F3F59B00}.Release|Xbox 360.ActiveCfg = Release|x86
+		{E1D2A728-135E-4D2C-A33B-6B751F9BC746}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E1D2A728-135E-4D2C-A33B-6B751F9BC746}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E1D2A728-135E-4D2C-A33B-6B751F9BC746}.Debug|x86.ActiveCfg = Debug|x86
+		{E1D2A728-135E-4D2C-A33B-6B751F9BC746}.Debug|x86.Build.0 = Debug|x86
+		{E1D2A728-135E-4D2C-A33B-6B751F9BC746}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{E1D2A728-135E-4D2C-A33B-6B751F9BC746}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E1D2A728-135E-4D2C-A33B-6B751F9BC746}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E1D2A728-135E-4D2C-A33B-6B751F9BC746}.Release|x86.ActiveCfg = Release|x86
+		{E1D2A728-135E-4D2C-A33B-6B751F9BC746}.Release|x86.Build.0 = Release|x86
+		{E1D2A728-135E-4D2C-A33B-6B751F9BC746}.Release|Xbox 360.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

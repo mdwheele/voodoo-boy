@@ -10,3 +10,9 @@ C:\Users\Dustin\Desktop\VoodooBoyGame\VoodooBoyGame\Gleed2D\Gleed2D.InGame\obj\x
 C:\Users\Dustin\Desktop\VoodooBoyGame\VoodooBoyGame\Gleed2D\Gleed2D.InGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Dustin\Desktop\VoodooBoyGame\VoodooBoyGame\Gleed2D\Gleed2D.InGame\obj\x86\Debug\Gleed2D.InGame.dll
 C:\Users\Dustin\Desktop\VoodooBoyGame\VoodooBoyGame\Gleed2D\Gleed2D.InGame\obj\x86\Debug\Gleed2D.InGame.pdb
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\Gleed2D\Gleed2D.InGame\bin\x86\Debug\Gleed2D.InGame.dll
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\Gleed2D\Gleed2D.InGame\bin\x86\Debug\Gleed2D.InGame.pdb
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\Gleed2D\Gleed2D.InGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\Gleed2D\Gleed2D.InGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\Gleed2D\Gleed2D.InGame\obj\x86\Debug\Gleed2D.InGame.dll
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\Gleed2D\Gleed2D.InGame\obj\x86\Debug\Gleed2D.InGame.pdb

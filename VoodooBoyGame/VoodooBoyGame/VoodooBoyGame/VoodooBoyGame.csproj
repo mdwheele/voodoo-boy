@@ -138,14 +138,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Components\BodyComponent.cs" />
+    <Compile Include="Entities\Components\AnimationPlayerComponent.cs" />
     <Compile Include="Entities\Components\WalkableBodyComponent.cs" />
     <Compile Include="Entities\Components\ExpiresComponent.cs" />
     <Compile Include="Entities\Components\TextureComponent.cs" />
     <Compile Include="Entities\Components\TransformComponent.cs" />
+    <Compile Include="Entities\Systems\AnimationUpdateSystem.cs" />
+    <Compile Include="Entities\Systems\AnimationRenderSystem.cs" />
     <Compile Include="Entities\Systems\WalkableBodySystem.cs" />
     <Compile Include="Entities\Systems\PhysicsSystem.cs" />
     <Compile Include="Entities\Systems\RenderSystem.cs" />
-    <Compile Include="Entities\Templates\PlayerTemplate.cs" />
+    <Compile Include="Entities\Templates\WalkableBodyTemplate.cs" />
     <Compile Include="Entities\Templates\GibTemplate.cs" />
     <Compile Include="Events\PlayerIndexEventArgs.cs" />
     <Compile Include="Common\Camera2D.cs" />
@@ -184,6 +187,10 @@
     <ProjectReference Include="..\DebugView XNA\DebugView XNA.csproj">
       <Project>{FC7845FA-13FE-4FF8-822A-A577F3F59B00}</Project>
       <Name>DebugView XNA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeminaRuntime\DeminaRuntime.csproj">
+      <Project>{E1D2A728-135E-4D2C-A33B-6B751F9BC746}</Project>
+      <Name>DeminaRuntime</Name>
     </ProjectReference>
     <ProjectReference Include="..\EasyStorage\EasyStorage [Windows].csproj">
       <Project>{A89EB1D5-B286-48EB-A864-315ABCDAA024}</Project>

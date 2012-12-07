@@ -1,0 +1,6 @@
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DeminaRuntime\bin\x86\Debug\DeminaRuntime.dll
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DeminaRuntime\bin\x86\Debug\DeminaRuntime.pdb
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DeminaRuntime\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DeminaRuntime\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DeminaRuntime\obj\x86\Debug\DeminaRuntime.dll
+C:\Users\Dustin\Desktop\VoodooBoyRepo\voodoo-boy\VoodooBoyGame\VoodooBoyGame\DeminaRuntime\obj\x86\Debug\DeminaRuntime.pdb

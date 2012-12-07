@@ -7,6 +7,7 @@ namespace VoodooBoyGame
     public class TransformComponent : Component
     {
         private Vector2 position;
+        private Vector2 transformOffset;
         private float rotation;
         private float scale;
 
@@ -14,6 +15,12 @@ namespace VoodooBoyGame
         {
             get { return position; }
             set { position = value; }
+        }
+
+        public Vector2 TransformOffset
+        {
+            get { return transformOffset; }
+            set { transformOffset = value; }
         }
 
         public float X

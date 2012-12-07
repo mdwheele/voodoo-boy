@@ -22,6 +22,9 @@
     <RootNamespace>VoodooBoyGameContent</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DeminaPipelineExtensions">
+      <HintPath>..\DeminaPipelineExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
@@ -106,6 +109,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Characters\Victor\walking.anim">
+      <Name>walking</Name>
+      <Processor>AnimationProcessor</Processor>
+      <Importer>AnimationImporter</Importer>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <None Include="Levels\debug-level.gleed">
       <Name>debug-level</Name>
       <Importer>XmlImporter</Importer>
@@ -181,6 +190,43 @@
   <ItemGroup>
     <Compile Include="Textures\mario.png">
       <Name>mario</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Characters\Victor\body.png">
+      <Name>body</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Characters\Victor\foot.png">
+      <Name>foot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Characters\Victor\head.png">
+      <Name>head</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Characters\Victor\left-arm.png">
+      <Name>left-arm</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Characters\Victor\leg.png">
+      <Name>leg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Characters\Victor\right-arm-lower.png">
+      <Name>right-arm-lower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Characters\Victor\right-arm-upper.png">
+      <Name>right-arm-upper</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
