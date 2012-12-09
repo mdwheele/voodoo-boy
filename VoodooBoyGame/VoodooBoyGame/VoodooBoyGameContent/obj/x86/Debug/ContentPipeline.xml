@@ -86,105 +86,6 @@
       <Time>2012-11-25T14:42:00.9410985-05:00</Time>
     </Item>
     <Item>
-      <Source>Textures\gib.png</Source>
-      <Name>Textures\gib</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Textures\gib.xnb</Output>
-      <Time>2012-12-02T03:20:12.8660174-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\cloud1.png</Source>
-      <Name>Textures\cloud1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Textures\cloud1.xnb</Output>
-      <Time>2012-12-01T19:18:54.041838-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\cloud2.png</Source>
-      <Name>Textures\cloud2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Textures\cloud2.xnb</Output>
-      <Time>2012-12-01T19:18:54.042838-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\cloud3.png</Source>
-      <Name>Textures\cloud3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Textures\cloud3.xnb</Output>
-      <Time>2012-12-01T19:18:54.042838-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\island1.png</Source>
-      <Name>Textures\island1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Textures\island1.xnb</Output>
-      <Time>2012-12-01T19:18:54.0438381-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\island2.png</Source>
-      <Name>Textures\island2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Textures\island2.xnb</Output>
-      <Time>2012-12-01T19:18:54.0448382-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\mist.png</Source>
-      <Name>Textures\mist</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Textures\mist.xnb</Output>
-      <Time>2012-12-01T19:18:54.0448382-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\tree1.png</Source>
-      <Name>Textures\tree1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Textures\tree1.xnb</Output>
-      <Time>2012-12-01T19:18:54.0568388-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\tree2.png</Source>
-      <Name>Textures\tree2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Textures\tree2.xnb</Output>
-      <Time>2012-12-01T19:18:54.0578389-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\wood-bridge-part-001.png</Source>
-      <Name>Textures\wood-bridge-part-001</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Textures\wood-bridge-part-001.xnb</Output>
-      <Time>2012-12-01T19:18:54.0578389-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\mario.png</Source>
-      <Name>Textures\mario</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Textures\mario.xnb</Output>
-      <Time>2012-12-03T21:43:52.1106363-05:00</Time>
-    </Item>
-    <Item>
       <Source>Characters\Victor\blank.png</Source>
       <Name>Characters\Victor\blank</Name>
       <Importer>TextureImporter</Importer>
@@ -275,6 +176,69 @@
       <Time>2012-12-08T18:57:36.6875024-05:00</Time>
     </Item>
     <Item>
+      <Source>Levels\Demo\bushes.png</Source>
+      <Name>Levels\Demo\bushes</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Levels\Demo\bushes.xnb</Output>
+      <Time>2012-12-09T08:19:50.1985818-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Demo\grass.png</Source>
+      <Name>Levels\Demo\grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Levels\Demo\grass.xnb</Output>
+      <Time>2012-12-09T08:19:50.2005819-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Demo\grass2.png</Source>
+      <Name>Levels\Demo\grass2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Levels\Demo\grass2.xnb</Output>
+      <Time>2012-12-09T08:19:50.2005819-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Demo\hills.png</Source>
+      <Name>Levels\Demo\hills</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Levels\Demo\hills.xnb</Output>
+      <Time>2012-12-09T08:19:50.201582-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Demo\mountain.png</Source>
+      <Name>Levels\Demo\mountain</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Levels\Demo\mountain.xnb</Output>
+      <Time>2012-12-09T08:19:50.201582-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Demo\mountain2.png</Source>
+      <Name>Levels\Demo\mountain2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Levels\Demo\mountain2.xnb</Output>
+      <Time>2012-12-09T08:19:50.202582-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Demo\rocks.png</Source>
+      <Name>Levels\Demo\rocks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Levels\Demo\rocks.xnb</Output>
+      <Time>2012-12-09T08:19:50.202582-05:00</Time>
+    </Item>
+    <Item>
       <Source>Characters\Victor\basic-attack.anim</Source>
       <Name>Characters\Victor\basic-attack</Name>
       <Importer>AnimationImporter</Importer>
@@ -320,6 +284,20 @@
       <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_left-arm.xnb</Request>
       <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_foot.xnb</Request>
       <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_head-smile.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Characters\Victor\pose.anim</Source>
+      <Name>Characters\Victor\pose</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\pose.xnb</Output>
+      <Time>2012-12-08T18:57:36.6865024-05:00</Time>
+      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_body.xnb</Request>
+      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_head.xnb</Request>
+      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_right-arm.xnb</Request>
+      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_left-arm.xnb</Request>
+      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_foot.xnb</Request>
     </Item>
     <Item>
       <Source>Characters\Victor\body.png</Source>
@@ -470,20 +448,6 @@
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_head-smile.xnb</Output>
       <Time>2012-12-08T18:57:36.6855023-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Characters\Victor\pose.anim</Source>
-      <Name>Characters\Victor\pose</Name>
-      <Importer>AnimationImporter</Importer>
-      <Processor>AnimationProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\pose.xnb</Output>
-      <Time>2012-12-08T18:57:36.6865024-05:00</Time>
-      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_body.xnb</Request>
-      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_head.xnb</Request>
-      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_right-arm.xnb</Request>
-      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_left-arm.xnb</Request>
-      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_foot.xnb</Request>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

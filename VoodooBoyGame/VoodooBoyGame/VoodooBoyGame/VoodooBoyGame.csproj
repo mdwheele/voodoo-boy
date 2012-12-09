@@ -151,7 +151,6 @@
     <Compile Include="Entities\Systems\BodyPhysicsSystem.cs" />
     <Compile Include="Entities\Systems\RenderSystem.cs" />
     <Compile Include="Entities\Templates\PlayerTemplate.cs" />
-    <Compile Include="Entities\Templates\GibTemplate.cs" />
     <Compile Include="Events\PlayerIndexEventArgs.cs" />
     <Compile Include="Common\Camera2D.cs" />
     <Compile Include="GameClasses\Layer.cs" />

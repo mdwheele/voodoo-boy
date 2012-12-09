@@ -28,9 +28,17 @@ Content\Characters\Victor\head-smile.xnb
 Content\Characters\Victor\head.xnb
 Content\Characters\Victor\left-arm.xnb
 Content\Characters\Victor\right-arm.xnb
+Content\Levels\Demo\bushes.xnb
+Content\Levels\Demo\grass.xnb
+Content\Levels\Demo\grass2.xnb
+Content\Levels\Demo\hills.xnb
+Content\Levels\Demo\mountain.xnb
+Content\Levels\Demo\mountain2.xnb
+Content\Levels\Demo\rocks.xnb
 Content\Characters\Victor\basic-attack.xnb
 Content\Characters\Victor\resting.xnb
 Content\Characters\Victor\running.xnb
+Content\Characters\Victor\pose.xnb
 Content\texture_Victor_body.xnb
 Content\texture_Victor_head.xnb
 Content\texture_Victor_right-arm.xnb
@@ -41,7 +49,7 @@ Content\texture_Victor_dagger-slash2.xnb
 Content\texture_Victor_dagger-slash3.xnb
 Content\texture_Victor_blank.xnb
 Content\texture_Victor_head-smile.xnb
-Content\Characters\Victor\pose.xnb
+Content\Levels\Demo\level.gleed
 Content\Levels\gleedtest.gleed
 Content\Levels\debug-level.gleed
 Content\font.xnb

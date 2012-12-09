@@ -25,7 +25,7 @@ namespace VoodooBoyGame
         private EntityWorld entityWorld;
         private World physicsWorld;
         private Dictionary<string, Layer> layers;
-        private string fileName;
+        private string levelName;
 
         private RenderSystem renderSystem;
         private BodyPhysicsSystem physicsSystem;
@@ -61,22 +61,22 @@ namespace VoodooBoyGame
             }
         }
 
-        public string FileName
+        public string LevelName
         {
-            get { return fileName; }
-            set { fileName = value; }
+            get { return levelName; }
+            set { levelName = value; }
         }
 
         #endregion
 
-        public LevelScreen(string levelFileName)
+        public LevelScreen(string level)
             : base()
         {
-            FileName = levelFileName;
-            Global.Camera.Position = new Vector2(664, 444);
+            LevelName = level;
+            Global.Camera.Position = new Vector2(800, 444);
             Global.Camera.Zoom = 1.0f;
-            Global.Camera.MinPosition = new Vector2(266, 128);
-            Global.Camera.MaxPosition = new Vector2(2620, 740);
+            Global.Camera.MinPosition = new Vector2(783, 128);
+            Global.Camera.MaxPosition = new Vector2(2400, 400);
         }
 
         public override void LoadContent()
@@ -99,8 +99,7 @@ namespace VoodooBoyGame
             entityWorld = new EntityWorld();
 
             SystemManager systemManager = entityWorld.SystemManager;
-            EntityWorld.SetEntityTemplate("Gib", new GibTemplate());
-            EntityWorld.SetEntityTemplate("BodyTest", new Player());
+            EntityWorld.SetEntityTemplate("Victor", new Player());
 
             renderSystem = systemManager.SetSystem(new RenderSystem(), ExecutionType.Draw);
             physicsSystem = systemManager.SetSystem(new BodyPhysicsSystem(PhysicsWorld), ExecutionType.Update);
@@ -117,7 +116,7 @@ namespace VoodooBoyGame
 
             Gleed2D.InGame.Level level;            
 
-            using (Stream stream = TitleContainer.OpenStream(String.Format("Content/Levels/{0}", FileName))) //#1 change here you level file path
+            using (Stream stream = TitleContainer.OpenStream(String.Format("Content/Levels/{0}/level.gleed", LevelName))) //#1 change here you level file path
             {
                 XElement xml = XElement.Load(stream);
                 level = LevelLoader.Load(xml);
@@ -137,7 +136,8 @@ namespace VoodooBoyGame
                         if (item.Properties is TextureItemProperties)
                         {
                             TextureItemProperties textureProperties = item.Properties as TextureItemProperties;
-                            string filename = "Textures/" + System.IO.Path.GetFileNameWithoutExtension(textureProperties.TexturePathRelativeToContentRoot); //3# change here your tile textures' file path
+                            string filename = String.Format("Levels/{0}/{1}", LevelName, System.IO.Path.GetFileNameWithoutExtension(textureProperties.TexturePathRelativeToContentRoot)); //3# change here your tile textures' file path
+                            Console.WriteLine(textureProperties.TexturePathRelativeToContentRoot);
                             Texture2D texture = Global.Content.Load<Texture2D>(filename);
 
                             layers[layer.Properties.Name].Add(new LayerTexture(texture, textureProperties.Position, textureProperties.Rotation, textureProperties.Scale));
@@ -203,9 +203,8 @@ namespace VoodooBoyGame
             debug.LoadContent(Global.Graphics, Global.Content);
 
             Global.Camera.Rotation = 0.0f;
-            Global.Camera.Zoom = 0.75f;
 
-            Entity e = EntityWorld.CreateEntity("BodyTest", PhysicsWorld);
+            Entity e = EntityWorld.CreateEntity("Victor", PhysicsWorld);
             Global.Camera.TrackingBody = e.GetComponent<WalkableBodyComponent>().Body;
             e.Refresh();
         }
@@ -215,41 +214,6 @@ namespace VoodooBoyGame
             if (input.IsPressed(Buttons.Back) || input.IsPressed(Buttons.B) || input.IsPressed(Keys.Escape))
             {
                 ExitScreen();
-            }
-            
-            if (input.IsHeldDown(Buttons.RightTrigger) || input.IsHeldDown(Keys.Z))
-            {
-                Global.Camera.RotateRight();
-                PhysicsWorld.Gravity = new Vector2(PhysicsWorld.Gravity.X + 0.05f, PhysicsWorld.Gravity.Y);
-            }
-
-            if (input.IsHeldDown(Buttons.LeftTrigger) || input.IsHeldDown(Keys.A))
-            {
-                Global.Camera.RotateLeft();
-                PhysicsWorld.Gravity = new Vector2(PhysicsWorld.Gravity.X - 0.05f, PhysicsWorld.Gravity.Y);
-            }
-
-            if (input.IsHeldDown(Buttons.RightThumbstickUp) || input.IsHeldDown(Keys.PageUp))
-            {
-                Global.Camera.ZoomIn();
-            }
-
-            if (input.IsHeldDown(Buttons.RightThumbstickDown) || input.IsHeldDown(Keys.PageDown))
-            {
-                Global.Camera.ZoomOut();
-            }
-
-            if (input.IsPressed(Buttons.Y))
-            {
-                input.ShakePad(TimeSpan.FromMilliseconds(200), 0.0f, 1.0f);
-            }
-
-            if (input.IsHeldDown(Buttons.RightShoulder))
-            {
-                Entity e = EntityWorld.CreateEntity("Gib", PhysicsWorld);
-                e.GetComponent<BodyComponent>().Body.Position = ConvertUnits.ToSimUnits(Global.Camera.Position);
-                e.GetComponent<BodyComponent>().Body.LinearVelocity = new Vector2((new Random()).Next(-5, 5), -5f);
-                e.Refresh();
             }
         }
 
@@ -267,17 +231,20 @@ namespace VoodooBoyGame
 
         public override void Draw(GameTime gameTime)
         {
-            Global.Graphics.Clear(Color.AliceBlue);
+            Global.Graphics.Clear(Color.CornflowerBlue);
 
-            foreach (KeyValuePair<string, Layer> layer in layers)
-            {
-                layer.Value.Draw();
-            }
+            layers["BGLAYER1"].Draw();
+            layers["BGLAYER2"].Draw();
+            layers["BGLAYER3"].Draw();
+            layers["LAYER1"].Draw();
 
             EntityWorld.SystemManager.UpdateSynchronous(ExecutionType.Draw);
 
+            layers["LAYER2"].Draw();
+            layers["LAYER3"].Draw();
+
             Global.SpriteBatch.Begin();
-            Global.SpriteBatch.DrawString(Global.Fonts["DebugBuild"], String.Format("Level Testbed\n---------------------\n\nLSTICK - Move Camera\nLTRIGGER / RTRIGGER(A / Z) - Rotate Camera\nRSTICKUP/DOWN(PAGEUP/DOWN) - Zoom +/-\nA(SPACE) - Spawn balls at Center Screen\nB(ESC) - Back to Main Menu\n\nZoom Level: {0}\nCamera Position: {1}\nPhysics Bodies: {2}\nEntities: {3}", Global.Camera.Zoom, Global.Camera.Position, PhysicsWorld.BodyList.Count-6, EntityWorld.EntityManager.ActiveEntitiesCount), new Vector2(10, 10), Color.Black);
+            //Global.SpriteBatch.DrawString(Global.Fonts["DebugBuild"], String.Format("Level Testbed\n---------------------\n\nLSTICK - Move Camera\nLTRIGGER / RTRIGGER(A / Z) - Rotate Camera\nRSTICKUP/DOWN(PAGEUP/DOWN) - Zoom +/-\nA(SPACE) - Spawn balls at Center Screen\nB(ESC) - Back to Main Menu\n\nZoom Level: {0}\nCamera Position: {1}\nPhysics Bodies: {2}\nEntities: {3}", Global.Camera.Zoom, Global.Camera.Position, PhysicsWorld.BodyList.Count-6, EntityWorld.EntityManager.ActiveEntitiesCount), new Vector2(10, 10), Color.Black);
             Global.SpriteBatch.End();
 
             // calculate the projection and view adjustments for the debug view
@@ -289,7 +256,7 @@ namespace VoodooBoyGame
                    Matrix.CreateScale(Global.Camera.Zoom) *
                    Matrix.CreateRotationZ(Global.Camera.Rotation);
             
-            //debug.RenderDebugData(ref projection, ref view);
+            debug.RenderDebugData(ref projection, ref view);
         }
     }
 }

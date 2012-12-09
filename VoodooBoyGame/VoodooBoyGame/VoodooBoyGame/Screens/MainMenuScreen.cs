@@ -67,7 +67,7 @@ namespace VoodooBoyGame
         
         void newGameEntrySelected(object sender, PlayerIndexEventArgs e)
         {
-            ScreenManager.AddScreen(new LevelScreen("debug-level.gleed"), ControllingPlayer);
+            ScreenManager.AddScreen(new LevelScreen("Demo"), ControllingPlayer);
         }
 
         void continueGameEntrySelected(object sender, PlayerIndexEventArgs e)

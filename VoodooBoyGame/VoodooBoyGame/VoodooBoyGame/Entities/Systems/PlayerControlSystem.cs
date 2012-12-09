@@ -40,7 +40,7 @@ namespace VoodooBoyGame
             if (Math.Abs(body.Wheel.LinearVelocity.X) < 0.5f)
                 animation.StartAnimation("resting");
 
-            if (input.IsHeldDown(Buttons.LeftThumbstickLeft) || input.IsHeldDown(Keys.Left))
+            if (input.IsHeldDown(Buttons.LeftThumbstickLeft) || input.IsHeldDown(Keys.Left) || input.IsHeldDown(Keys.A))
             {
                 body.Motor.MotorSpeed = -15f;
 
@@ -50,7 +50,7 @@ namespace VoodooBoyGame
                     animation.StartAnimation("running");
             }
 
-            if (input.IsHeldDown(Buttons.LeftThumbstickRight) || input.IsHeldDown(Keys.Right))
+            if (input.IsHeldDown(Buttons.LeftThumbstickRight) || input.IsHeldDown(Keys.Right) || input.IsHeldDown(Keys.D))
             {
                 body.Motor.MotorSpeed = 15f;
 
