@@ -7,10 +7,12 @@ using FarseerPhysics.Factories;
 using FarseerPhysics.Dynamics;
 using Microsoft.Xna.Framework;
 using FarseerPhysics.Dynamics.Joints;
+using Demina;
+using Microsoft.Xna.Framework.Input;
 
 namespace VoodooBoyGame
 {
-    class WalkableBodyTemplate : IEntityTemplate
+    class Player : IEntityTemplate
     {
         public Entity BuildEntity(Entity e, params object[] args)
         {
@@ -19,7 +21,21 @@ namespace VoodooBoyGame
                 FarseerPhysics.Dynamics.World physics = (FarseerPhysics.Dynamics.World)args[0];
 
                 e.Group = "PLAYER";
-                e.AddComponent(new WalkableBodyComponent(physics, new Vector2(200, 200), ConvertUnits.ToSimUnits(64), ConvertUnits.ToSimUnits(96), 2.0f));
+                e.AddComponent(new WalkableBodyComponent(physics, new Vector2(200, 200), ConvertUnits.ToSimUnits(64), ConvertUnits.ToSimUnits(118), 2.0f));
+
+                TransformComponent transform = new TransformComponent();
+                transform.TransformOffset = new Vector2(0, 40);
+                e.AddComponent(transform);
+
+                AnimationPlayerComponent animation = new AnimationPlayerComponent();
+                animation.AddAnimation("resting", Global.Content.Load<Animation>("Characters/Victor/resting"));
+                animation.AddAnimation("running", Global.Content.Load<Animation>("Characters/Victor/running"));
+                animation.AnimationPlayer.StartAnimation("resting");
+                e.AddComponent(animation);
+
+                PlayerComponent player = new PlayerComponent();
+
+                e.AddComponent(player);
 
                 return e;
             }

@@ -191,7 +191,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\blank.xnb</Output>
-      <Time>2012-12-07T01:13:57.3939606-05:00</Time>
+      <Time>2012-12-08T18:57:36.6815021-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\body.png</Source>
@@ -200,7 +200,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\body.xnb</Output>
-      <Time>2012-12-07T01:13:57.3949606-05:00</Time>
+      <Time>2012-12-08T18:57:36.6825022-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\dagger-slash1.png</Source>
@@ -209,7 +209,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\dagger-slash1.xnb</Output>
-      <Time>2012-12-07T01:13:57.3949606-05:00</Time>
+      <Time>2012-12-08T18:57:36.6825022-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\dagger-slash2.png</Source>
@@ -218,7 +218,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\dagger-slash2.xnb</Output>
-      <Time>2012-12-07T01:13:57.3959607-05:00</Time>
+      <Time>2012-12-08T18:57:36.6835022-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\dagger-slash3.png</Source>
@@ -227,7 +227,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\dagger-slash3.xnb</Output>
-      <Time>2012-12-07T01:13:57.3969607-05:00</Time>
+      <Time>2012-12-08T18:57:36.6835022-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\foot.png</Source>
@@ -236,7 +236,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\foot.xnb</Output>
-      <Time>2012-12-07T01:13:57.3969607-05:00</Time>
+      <Time>2012-12-08T18:57:36.6845023-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\head-smile.png</Source>
@@ -245,7 +245,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\head-smile.xnb</Output>
-      <Time>2012-12-07T01:13:57.3979608-05:00</Time>
+      <Time>2012-12-08T18:57:36.6855023-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\head.png</Source>
@@ -254,7 +254,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\head.xnb</Output>
-      <Time>2012-12-07T01:13:57.3979608-05:00</Time>
+      <Time>2012-12-08T18:57:36.6855023-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\left-arm.png</Source>
@@ -263,7 +263,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\left-arm.xnb</Output>
-      <Time>2012-12-07T01:13:57.3989609-05:00</Time>
+      <Time>2012-12-08T18:57:36.6865024-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\right-arm.png</Source>
@@ -272,7 +272,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\right-arm.xnb</Output>
-      <Time>2012-12-07T01:13:57.3989609-05:00</Time>
+      <Time>2012-12-08T18:57:36.6875024-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\basic-attack.anim</Source>
@@ -281,7 +281,7 @@
       <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\basic-attack.xnb</Output>
-      <Time>2012-12-07T01:15:06.9489389-05:00</Time>
+      <Time>2012-12-08T18:57:36.680502-05:00</Time>
       <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_body.xnb</Request>
       <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_head.xnb</Request>
       <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_right-arm.xnb</Request>
@@ -299,7 +299,7 @@
       <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\resting.xnb</Output>
-      <Time>2012-12-07T01:15:06.949939-05:00</Time>
+      <Time>2012-12-08T18:57:36.6875024-05:00</Time>
       <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_body.xnb</Request>
       <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_head.xnb</Request>
       <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_right-arm.xnb</Request>
@@ -313,7 +313,7 @@
       <Processor>AnimationProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\running.xnb</Output>
-      <Time>2012-12-07T01:15:06.950939-05:00</Time>
+      <Time>2012-12-08T18:57:36.6885025-05:00</Time>
       <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_body.xnb</Request>
       <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_head.xnb</Request>
       <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_right-arm.xnb</Request>
@@ -334,7 +334,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_body.xnb</Output>
-      <Time>2012-12-07T01:13:57.3949606-05:00</Time>
+      <Time>2012-12-08T18:57:36.6825022-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\head.png</Source>
@@ -349,7 +349,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_head.xnb</Output>
-      <Time>2012-12-07T01:13:57.3979608-05:00</Time>
+      <Time>2012-12-08T18:57:36.6855023-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\right-arm.png</Source>
@@ -364,7 +364,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_right-arm.xnb</Output>
-      <Time>2012-12-07T01:13:57.3989609-05:00</Time>
+      <Time>2012-12-08T18:57:36.6875024-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\left-arm.png</Source>
@@ -379,7 +379,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_left-arm.xnb</Output>
-      <Time>2012-12-07T01:13:57.3989609-05:00</Time>
+      <Time>2012-12-08T18:57:36.6865024-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\foot.png</Source>
@@ -394,7 +394,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_foot.xnb</Output>
-      <Time>2012-12-07T01:13:57.3969607-05:00</Time>
+      <Time>2012-12-08T18:57:36.6845023-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\dagger-slash1.png</Source>
@@ -409,7 +409,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_dagger-slash1.xnb</Output>
-      <Time>2012-12-07T01:13:57.3949606-05:00</Time>
+      <Time>2012-12-08T18:57:36.6825022-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\dagger-slash2.png</Source>
@@ -424,7 +424,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_dagger-slash2.xnb</Output>
-      <Time>2012-12-07T01:13:57.3959607-05:00</Time>
+      <Time>2012-12-08T18:57:36.6835022-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\dagger-slash3.png</Source>
@@ -439,7 +439,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_dagger-slash3.xnb</Output>
-      <Time>2012-12-07T01:13:57.3969607-05:00</Time>
+      <Time>2012-12-08T18:57:36.6835022-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\blank.png</Source>
@@ -454,7 +454,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_blank.xnb</Output>
-      <Time>2012-12-07T01:13:57.3939606-05:00</Time>
+      <Time>2012-12-08T18:57:36.6815021-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Victor\head-smile.png</Source>
@@ -469,7 +469,21 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_head-smile.xnb</Output>
-      <Time>2012-12-07T01:13:57.3979608-05:00</Time>
+      <Time>2012-12-08T18:57:36.6855023-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Characters\Victor\pose.anim</Source>
+      <Name>Characters\Victor\pose</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\pose.xnb</Output>
+      <Time>2012-12-08T18:57:36.6865024-05:00</Time>
+      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_body.xnb</Request>
+      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_head.xnb</Request>
+      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_right-arm.xnb</Request>
+      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_left-arm.xnb</Request>
+      <Request>C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\texture_Victor_foot.xnb</Request>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

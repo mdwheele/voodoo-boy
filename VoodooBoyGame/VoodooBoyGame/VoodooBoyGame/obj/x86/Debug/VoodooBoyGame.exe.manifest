@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Game.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="VoodooBoyGame" version="1.0.4724.41242" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="VoodooBoyGame" version="1.0.4725.34317" language="neutral" processorArchitecture="x86" />
     <commandLine file="VoodooBoyGame.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -165,14 +165,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VoodooBoyGame.exe" size="61952">
-      <assemblyIdentity name="VoodooBoyGame" version="1.0.4724.41242" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VoodooBoyGame.exe" size="63488">
+      <assemblyIdentity name="VoodooBoyGame" version="1.0.4725.34317" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>FQk5w0HBirX8J95mNl82tlrWZP4=</dsig:DigestValue>
+        <dsig:DigestValue>Kq55yT8uGXs+p0OwPyHqPXXmTDw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -266,13 +266,22 @@
       <dsig:DigestValue>MOuo+XIWeR6WBRwNkud9D3Fb7Ec=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Content\Characters\Victor\pose.xnb" size="1064">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XFPRdzBDjQxQZqvqscwW7kAUUtE=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Content\Characters\Victor\resting.xnb" size="1588">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>pg+502lKFmvBq6tBlQi3SXxT5K4=</dsig:DigestValue>
+      <dsig:DigestValue>YDkUnA08HdhTBzuMBq5QUHtJ0sg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Characters\Victor\right-arm.xnb" size="57283">
@@ -290,7 +299,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>XVpDj06sKl0PrgzCLch0gLLcqzY=</dsig:DigestValue>
+      <dsig:DigestValue>nc9VosDp2avx0sqlBxqZwZBFbxM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\font.xnb" size="21678">

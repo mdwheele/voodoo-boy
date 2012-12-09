@@ -29,8 +29,10 @@ namespace VoodooBoyGame
         {
             Texture2D texture = renderTextureMapper.Get(e).Texture;
             Vector2 position = transformMapper.Get(e).Position;
-            
+
+            Global.SpriteBatch.Begin(SpriteSortMode.Immediate, null, null, null, null, null, Global.Camera.CameraMatrix);
             Global.SpriteBatch.Draw(texture, new Rectangle((int)position.X, (int)position.Y, (int)texture.Width, (int)texture.Height), null, Color.White, transformMapper.Get(e).Rotation, renderTextureMapper.Get(e).Origin, SpriteEffects.None, 0);
+            Global.SpriteBatch.End();
         }
     }
 }

@@ -7,6 +7,8 @@ using Microsoft.Xna.Framework;
 using Artemis;
 using FarseerPhysics.Dynamics.Joints;
 using FarseerPhysics.Factories;
+using FarseerPhysics.DebugViews;
+using FarseerPhysics;
 
 namespace VoodooBoyGame
 {
@@ -17,6 +19,7 @@ namespace VoodooBoyGame
         FixedAngleJoint fixedAngleJoint;
         RevoluteJoint motor;
         float centerOffset;
+        bool onGround;
 
         public Body Body
         {
@@ -36,6 +39,12 @@ namespace VoodooBoyGame
         public Vector2 Origin
         {
             get { return new Vector2(ConvertUnits.ToDisplayUnits(body.Position.X), centerOffset); }
+        }
+
+        public bool OnGround
+        {
+            get { return onGround; }
+            set { onGround = value; }
         }
 
         public WalkableBodyComponent(FarseerPhysics.Dynamics.World physics, Vector2 position, float width, float height, float mass)
@@ -73,45 +82,7 @@ namespace VoodooBoyGame
             motor.MotorSpeed = 0.0f;
 
             wheel.IgnoreCollisionWith(body);
-            body.IgnoreCollisionWith(wheel);
+            body.IgnoreCollisionWith(wheel);                        
         }
     }
 }
-
-/*
-    FarseerPhysics.Dynamics.World physics = (FarseerPhysics.Dynamics.World)args[0];
-
-    Vector2 textureSize = new Vector2(e.GetComponent<TextureComponent>().Texture.Width, e.GetComponent<TextureComponent>().Texture.Height);
-
-    BodyComponent playerUpperBody = new BodyComponent();                
-    BodyComponent playerFeet = new BodyComponent();
-
-    float upperBodyHeight = textureSize.Y - (textureSize.X / 2);
-
-    playerUpperBody.Body = BodyFactory.CreateRectangle(physics, ConvertUnits.ToSimUnits(textureSize.X), ConvertUnits.ToSimUnits(textureSize.Y), 1.0f);
-    playerUpperBody.Body.BodyType = BodyType.Dynamic;
-    playerUpperBody.Body.Restitution = 0.0f;
-    playerUpperBody.Body.Friction = 0.5f;
-    playerUpperBody.Position = ConvertUnits.ToSimUnits(-Vector2.UnitY * (textureSize.X / 4));
-    JointFactory.CreateFixedAngleJoint(physics, playerUpperBody.Body);
-
-    playerFeet.Body = BodyFactory.CreateCircle(physics, ConvertUnits.ToSimUnits(textureSize.X / 2), 1.0f);
-    playerFeet.Body.Position = playerUpperBody.Position + ConvertUnits.ToSimUnits(Vector2.UnitY * (upperBodyHeight / 2));
-    playerFeet.Body.BodyType = BodyType.Dynamic;
-    playerFeet.Restitution = 0.0f;
-    playerFeet.Friction = float.MaxValue;
-
-    RevoluteJoint motor = JointFactory.CreateRevoluteJoint(physics, playerUpperBody.Body, playerFeet.Body, Vector2.Zero);
-
-    motor.MotorEnabled = true;
-    motor.MaxMotorTorque = 10000f;
-    motor.MotorSpeed = 500f;
-
-    playerUpperBody.Body.IgnoreCollisionWith(playerFeet.Body);
-    playerFeet.Body.IgnoreCollisionWith(playerUpperBody.Body);
-
-    e.AddComponent(playerFeet);
-    e.AddComponent(playerUpperBody); 
-
-    Global.Camera.TrackingBody = playerUpperBody.Body;
-*/

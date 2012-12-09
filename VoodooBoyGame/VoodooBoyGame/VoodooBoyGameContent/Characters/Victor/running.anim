@@ -64,8 +64,8 @@
       <ParentIndex>-1</ParentIndex>
       <TextureIndex>0</TextureIndex>
       <Position>
-        <X>-13.2</X>
-        <Y>8.200012</Y>
+        <X>0</X>
+        <Y>0</Y>
       </Position>
       <Rotation>0</Rotation>
       <Scale>
@@ -94,7 +94,7 @@
       <TextureFlipHorizontal>False</TextureFlipHorizontal>
       <TextureFlipVertical>False</TextureFlipVertical>
       <ParentIndex>3</ParentIndex>
-      <TextureIndex>5</TextureIndex>
+      <TextureIndex>1</TextureIndex>
       <Position>
         <X>-4</X>
         <Y>-51</Y>
@@ -162,8 +162,8 @@
       <ParentIndex>-1</ParentIndex>
       <TextureIndex>0</TextureIndex>
       <Position>
-        <X>-12.8</X>
-        <Y>9.800011</Y>
+        <X>-2</X>
+        <Y>4</Y>
       </Position>
       <Rotation>0</Rotation>
       <Scale>
@@ -192,7 +192,7 @@
       <TextureFlipHorizontal>False</TextureFlipHorizontal>
       <TextureFlipVertical>False</TextureFlipVertical>
       <ParentIndex>3</ParentIndex>
-      <TextureIndex>5</TextureIndex>
+      <TextureIndex>1</TextureIndex>
       <Position>
         <X>-4</X>
         <Y>-51</Y>
@@ -260,8 +260,8 @@
       <ParentIndex>-1</ParentIndex>
       <TextureIndex>0</TextureIndex>
       <Position>
-        <X>-12.44</X>
-        <Y>5.640014</Y>
+        <X>0</X>
+        <Y>0</Y>
       </Position>
       <Rotation>0</Rotation>
       <Scale>
@@ -290,7 +290,7 @@
       <TextureFlipHorizontal>False</TextureFlipHorizontal>
       <TextureFlipVertical>False</TextureFlipVertical>
       <ParentIndex>3</ParentIndex>
-      <TextureIndex>5</TextureIndex>
+      <TextureIndex>1</TextureIndex>
       <Position>
         <X>-4</X>
         <Y>-51</Y>
@@ -358,8 +358,8 @@
       <ParentIndex>-1</ParentIndex>
       <TextureIndex>0</TextureIndex>
       <Position>
-        <X>-12.32444</X>
-        <Y>3.524459</Y>
+        <X>0</X>
+        <Y>0</Y>
       </Position>
       <Rotation>0</Rotation>
       <Scale>
@@ -388,7 +388,7 @@
       <TextureFlipHorizontal>False</TextureFlipHorizontal>
       <TextureFlipVertical>False</TextureFlipVertical>
       <ParentIndex>3</ParentIndex>
-      <TextureIndex>5</TextureIndex>
+      <TextureIndex>1</TextureIndex>
       <Position>
         <X>-4</X>
         <Y>-51</Y>

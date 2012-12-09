@@ -8,11 +8,18 @@ namespace VoodooBoyGame
     public class AnimationPlayerComponent : Component
     {
         private AnimationPlayer animationPlayer;
+        private bool flipped;
 
         public AnimationPlayer AnimationPlayer
         {
             get { return animationPlayer; }
             set { animationPlayer = value; }
+        }
+
+        public bool Flipped
+        {
+            get { return flipped; }
+            set { flipped = value; }
         }
 
         public float Speed
@@ -24,6 +31,7 @@ namespace VoodooBoyGame
         public AnimationPlayerComponent()
         {
             animationPlayer = new AnimationPlayer();
+            flipped = false;
         }
 
         public void AddAnimation(string name, Animation animation)

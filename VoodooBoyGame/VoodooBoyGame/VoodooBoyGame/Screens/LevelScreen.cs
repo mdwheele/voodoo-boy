@@ -28,10 +28,11 @@ namespace VoodooBoyGame
         private string fileName;
 
         private RenderSystem renderSystem;
-        private PhysicsSystem physicsSystem;
-        private WalkableBodySystem walkableBodySystem;
+        private BodyPhysicsSystem physicsSystem;
+        private WalkableBodyPhysicsSystem walkableBodySystem;
         private AnimationUpdateSystem animationUpdateSystem;
         private AnimationRenderSystem animationRenderSystem;
+        private PlayerControlSystem playerControlSystem;
 
         private DebugViewXNA debug;
         #endregion
@@ -99,13 +100,14 @@ namespace VoodooBoyGame
 
             SystemManager systemManager = entityWorld.SystemManager;
             EntityWorld.SetEntityTemplate("Gib", new GibTemplate());
-            EntityWorld.SetEntityTemplate("BodyTest", new WalkableBodyTemplate());
+            EntityWorld.SetEntityTemplate("BodyTest", new Player());
 
             renderSystem = systemManager.SetSystem(new RenderSystem(), ExecutionType.Draw);
-            physicsSystem = systemManager.SetSystem(new PhysicsSystem(PhysicsWorld), ExecutionType.Update);
-            walkableBodySystem = systemManager.SetSystem(new WalkableBodySystem(PhysicsWorld), ExecutionType.Update);
+            physicsSystem = systemManager.SetSystem(new BodyPhysicsSystem(PhysicsWorld), ExecutionType.Update);
+            walkableBodySystem = systemManager.SetSystem(new WalkableBodyPhysicsSystem(PhysicsWorld), ExecutionType.Update);
             animationUpdateSystem = systemManager.SetSystem(new AnimationUpdateSystem(), ExecutionType.Update);
             animationRenderSystem = systemManager.SetSystem(new AnimationRenderSystem(), ExecutionType.Draw);
+            playerControlSystem = systemManager.SetSystem(new PlayerControlSystem(), ExecutionType.Update);
 
             systemManager.InitializeAll();
 
@@ -214,15 +216,7 @@ namespace VoodooBoyGame
             {
                 ExitScreen();
             }
-
-            float hori = input.CurrentGamepadState.ThumbSticks.Left.X;
-            float vert = -input.CurrentGamepadState.ThumbSticks.Left.Y;
-
-            if (input.IsHeldDown(Keys.Right)) { Global.Camera.Move(new Vector2(10, 0)); }
-            if(input.IsHeldDown(Keys.Left)){Global.Camera.Move(new Vector2(-10, 0));}
-            if(input.IsHeldDown(Keys.Up)){Global.Camera.Move(new Vector2(0, -10));}
-            if(input.IsHeldDown(Keys.Down)){Global.Camera.Move(new Vector2(0, 10));}
-
+            
             if (input.IsHeldDown(Buttons.RightTrigger) || input.IsHeldDown(Keys.Z))
             {
                 Global.Camera.RotateRight();
@@ -295,7 +289,7 @@ namespace VoodooBoyGame
                    Matrix.CreateScale(Global.Camera.Zoom) *
                    Matrix.CreateRotationZ(Global.Camera.Rotation);
             
-            debug.RenderDebugData(ref projection, ref view);
+            //debug.RenderDebugData(ref projection, ref view);
         }
     }
 }

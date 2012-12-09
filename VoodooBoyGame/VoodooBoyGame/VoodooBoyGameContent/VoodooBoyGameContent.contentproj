@@ -124,6 +124,11 @@
       <Importer>AnimationImporter</Importer>
       <Processor>AnimationProcessor</Processor>
     </Compile>
+    <Compile Include="Characters\Victor\pose.anim">
+      <Name>pose</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
     <None Include="Levels\debug-level.gleed">
       <Name>debug-level</Name>
       <Importer>XmlImporter</Importer>

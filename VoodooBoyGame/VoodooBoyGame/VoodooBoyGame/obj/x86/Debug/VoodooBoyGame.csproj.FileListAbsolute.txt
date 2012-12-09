@@ -198,3 +198,4 @@ C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\obj
 C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\obj\x86\Debug\VoodooBoyGame.application
 C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\obj\x86\Debug\VoodooBoyGame.exe
 C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\obj\x86\Debug\VoodooBoyGame.pdb
+C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\pose.xnb

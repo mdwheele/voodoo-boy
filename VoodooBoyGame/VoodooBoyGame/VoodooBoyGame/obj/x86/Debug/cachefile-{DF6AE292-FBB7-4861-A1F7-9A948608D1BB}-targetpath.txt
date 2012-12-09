@@ -41,5 +41,6 @@ Content\texture_Victor_dagger-slash2.xnb
 Content\texture_Victor_dagger-slash3.xnb
 Content\texture_Victor_blank.xnb
 Content\texture_Victor_head-smile.xnb
+Content\Characters\Victor\pose.xnb
 Content\Levels\debug-level.gleed
 Content\Levels\gleedtest.gleed
