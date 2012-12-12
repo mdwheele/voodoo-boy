@@ -194,3 +194,5 @@ C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin
 C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Levels\Demo\mountain2.xnb
 C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Levels\Demo\rocks.xnb
 C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Levels\Demo\level.gleed
+C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\jumping.xnb
+C:\Users\Dustin\Desktop\voodoo-boy\VoodooBoyGame\VoodooBoyGame\VoodooBoyGame\bin\x86\Debug\Content\Characters\Victor\falling.xnb

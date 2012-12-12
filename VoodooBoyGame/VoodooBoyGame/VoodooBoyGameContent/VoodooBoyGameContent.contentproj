@@ -129,6 +129,16 @@
       <Importer>AnimationImporter</Importer>
       <Processor>AnimationProcessor</Processor>
     </Compile>
+    <Compile Include="Characters\Victor\jumping.anim">
+      <Name>jumping</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Characters\Victor\falling.anim">
+      <Name>falling</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
     <None Include="Levels\Demo\level.gleed">
       <Name>level</Name>
       <Importer>XmlImporter</Importer>

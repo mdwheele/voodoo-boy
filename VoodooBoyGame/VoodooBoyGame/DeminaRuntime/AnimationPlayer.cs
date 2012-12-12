@@ -23,6 +23,7 @@ namespace Demina
 		public string CurrentAnimation { get { return currentAnimation; } }
 		public int CurrentKeyframe { get { return animations[currentAnimation].Keyframes[currentKeyframeIndex].FrameNumber; } }
 		public bool Transitioning { get { return transitioning; } }
+        public bool IsLoop { get { return animations[currentAnimation].Loop; } }
 
         public float PlaySpeedMultiplier { get; set; }
 
@@ -79,15 +80,18 @@ namespace Demina
 
 		public void TransitionToAnimation(string animation, float time)
 		{
-			if (transitioning)
-			{
-				Animation.UpdateBoneTransitions(transitionStates, animations[currentAnimation], animations[transitionAnimation], transitionTime / transitionTotalTime);
-			}
+            if (currentAnimation != animation)
+            {
+                if (transitioning)
+                {
+                    Animation.UpdateBoneTransitions(transitionStates, animations[currentAnimation], animations[transitionAnimation], transitionTime / transitionTotalTime);
+                }
 
-			transitioning = true;
-			transitionTime = 0;
-			transitionTotalTime = time;
-			transitionAnimation = animation;
+                transitioning = true;
+                transitionTime = 0;
+                transitionTotalTime = time;
+                transitionAnimation = animation;
+            }
 		}
 
 		public int GetBoneTransformIndex(string boneName)
@@ -115,8 +119,8 @@ namespace Demina
             deltaSeconds *= PlaySpeedMultiplier;
 
 			if (transitioning)
-			{
-				transitionTime += deltaSeconds;
+            {
+				transitionTime += deltaSeconds;               
 
 				if (transitionTime > transitionTotalTime)
 				{

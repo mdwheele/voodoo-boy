@@ -7,17 +7,6 @@ Content\Utility\xboxControllerSpriteFont.xnb
 Content\MenuBackgrounds\main-menu-screen-bg.xnb
 Content\MenuBackgrounds\options-screen-bg.xnb
 Content\Utility\blank.xnb
-Content\Textures\gib.xnb
-Content\Textures\cloud1.xnb
-Content\Textures\cloud2.xnb
-Content\Textures\cloud3.xnb
-Content\Textures\island1.xnb
-Content\Textures\island2.xnb
-Content\Textures\mist.xnb
-Content\Textures\tree1.xnb
-Content\Textures\tree2.xnb
-Content\Textures\wood-bridge-part-001.xnb
-Content\Textures\mario.xnb
 Content\Characters\Victor\blank.xnb
 Content\Characters\Victor\body.xnb
 Content\Characters\Victor\dagger-slash1.xnb
@@ -49,7 +38,7 @@ Content\texture_Victor_dagger-slash2.xnb
 Content\texture_Victor_dagger-slash3.xnb
 Content\texture_Victor_blank.xnb
 Content\texture_Victor_head-smile.xnb
+Content\Characters\Victor\jumping.xnb
+Content\Characters\Victor\falling.xnb
 Content\Levels\Demo\level.gleed
-Content\Levels\gleedtest.gleed
-Content\Levels\debug-level.gleed
 Content\font.xnb

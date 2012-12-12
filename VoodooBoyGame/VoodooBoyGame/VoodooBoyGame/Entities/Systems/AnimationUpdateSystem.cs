@@ -10,17 +10,16 @@ namespace VoodooBoyGame
 {
     class AnimationUpdateSystem : EntityProcessingSystem
     {
-        private ComponentMapper<AnimationPlayerComponent> animationMapper;
-        private ComponentMapper<TransformComponent> transformMapper;
+        private ComponentMapper<AnimationComponent> animationMapper;
 
         public AnimationUpdateSystem()
-            : base(typeof(AnimationPlayerComponent), typeof(TransformComponent))
+            : base(typeof(AnimationComponent))
         {
         }
 
         public override void Initialize()
         {
-            animationMapper = new ComponentMapper<AnimationPlayerComponent>(world);
+            animationMapper = new ComponentMapper<AnimationComponent>(world);
         }
 
         public override void Process(Entity e)

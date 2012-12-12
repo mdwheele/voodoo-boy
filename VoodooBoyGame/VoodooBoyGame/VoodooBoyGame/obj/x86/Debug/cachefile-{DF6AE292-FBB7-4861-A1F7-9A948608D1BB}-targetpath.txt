@@ -38,4 +38,6 @@ Content\texture_Victor_dagger-slash2.xnb
 Content\texture_Victor_dagger-slash3.xnb
 Content\texture_Victor_blank.xnb
 Content\texture_Victor_head-smile.xnb
+Content\Characters\Victor\jumping.xnb
+Content\Characters\Victor\falling.xnb
 Content\Levels\Demo\level.gleed

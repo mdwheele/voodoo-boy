@@ -12,57 +12,57 @@ using FarseerPhysics.Dynamics.Joints;
 
 namespace VoodooBoyGame
 {
-    class PlayerControlSystem : EntityProcessingSystem
+    class PlayerControlSystem : TagSystem
     {
-        private ComponentMapper<WalkableBodyComponent> walkableBodyMapper;
-        private ComponentMapper<AnimationPlayerComponent> animationMapper;
+        private ComponentMapper<WalkingComponent> walkingComponent;
         private InputHelper input;
 
         public PlayerControlSystem()
-            : base(typeof(WalkableBodyComponent), typeof(AnimationPlayerComponent), typeof(PlayerComponent))
+            : base("PLAYER")
         {
             input = Global.Input;
         }
 
         public override void Initialize()
         {
-            walkableBodyMapper = new ComponentMapper<WalkableBodyComponent>(world);
-            animationMapper = new ComponentMapper<AnimationPlayerComponent>(world);
+            walkingComponent = new ComponentMapper<WalkingComponent>(world);
         }
 
         public override void Process(Entity e)
         {
-            WalkableBodyComponent body = walkableBodyMapper.Get(e);
-            AnimationPlayerComponent animation = animationMapper.Get(e);
-
-            body.Motor.MotorSpeed = 0.0f;
-
-            if (Math.Abs(body.Wheel.LinearVelocity.X) < 0.5f)
-                animation.StartAnimation("resting");
-
-            if (input.IsHeldDown(Buttons.LeftThumbstickLeft) || input.IsHeldDown(Keys.Left) || input.IsHeldDown(Keys.A))
+            if (e.HasComponent<WalkingComponent>())
             {
-                body.Motor.MotorSpeed = -15f;
+                WalkingComponent body = walkingComponent.Get(e);
 
-                animation.Flipped = true;
+                if (body.OnGround && body.CurrState != WalkingState.Jumping)
+                {
+                    //Walking Left, On Ground
+                    if (input.IsHeldDown(Buttons.LeftThumbstickLeft))
+                    {
+                        body.MoveLeft();
+                    }
 
-                if (animation.AnimationPlayer.CurrentAnimation != "running")
-                    animation.StartAnimation("running");
-            }
+                    //Walking Right, On Ground
+                    if (input.IsHeldDown(Buttons.LeftThumbstickRight))
+                    {
+                        body.MoveRight();
+                    }
+                    
+                    if (!input.IsHeldDown(Buttons.LeftThumbstickRight) && !input.IsHeldDown(Buttons.LeftThumbstickLeft))
+                    {
+                        body.StopMoving();
+                    }
 
-            if (input.IsHeldDown(Buttons.LeftThumbstickRight) || input.IsHeldDown(Keys.Right) || input.IsHeldDown(Keys.D))
-            {
-                body.Motor.MotorSpeed = 15f;
+                    //Jump
+                    if (input.IsPressed(Buttons.A))
+                    {
+                        body.Jump();
+                    }
+                }
+                else
+                {
 
-                animation.Flipped = false;
-
-                if (animation.AnimationPlayer.CurrentAnimation != "running")
-                    animation.StartAnimation("running");
-            }
-
-            if ((input.IsPressed(Buttons.A) || input.IsPressed(Keys.Space)) && body.OnGround)
-            {
-                body.Wheel.ApplyLinearImpulse(ConvertUnits.ToSimUnits(new Vector2(0, -1300f)));
+                }
             }
         }
     }

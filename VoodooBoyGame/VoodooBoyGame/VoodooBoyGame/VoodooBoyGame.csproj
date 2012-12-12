@@ -138,7 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Components\BodyComponent.cs" />
-    <Compile Include="Entities\Components\AnimationPlayerComponent.cs" />
+    <Compile Include="Entities\Components\AnimationComponent.cs" />
     <Compile Include="Entities\Components\PlayerComponent.cs" />
     <Compile Include="Entities\Components\WalkableBodyComponent.cs" />
     <Compile Include="Entities\Components\ExpiresComponent.cs" />
@@ -147,7 +147,7 @@
     <Compile Include="Entities\Systems\AnimationUpdateSystem.cs" />
     <Compile Include="Entities\Systems\AnimationRenderSystem.cs" />
     <Compile Include="Entities\Systems\PlayerControlSystem.cs" />
-    <Compile Include="Entities\Systems\WalkableBodyPhysicsSystem.cs" />
+    <Compile Include="Entities\Systems\WalkableBodySystem.cs" />
     <Compile Include="Entities\Systems\BodyPhysicsSystem.cs" />
     <Compile Include="Entities\Systems\RenderSystem.cs" />
     <Compile Include="Entities\Templates\PlayerTemplate.cs" />

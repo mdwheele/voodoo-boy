@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Game.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="VoodooBoyGame" version="1.0.4726.16513" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="VoodooBoyGame" version="1.0.4728.43090" language="neutral" processorArchitecture="x86" />
     <commandLine file="VoodooBoyGame.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -100,19 +100,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Nr0MzHJhmfE8PaMsMlibXkihBRI=</dsig:DigestValue>
+        <dsig:DigestValue>kLvMDjCC/2s4t0PptjweePjmfY4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DebugViewXNA.dll" size="22528">
-      <assemblyIdentity name="DebugViewXNA" version="3.3.1.15279" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="DebugViewXNA" version="3.3.1.40711" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>LsuWt8Y8NfLeZwv0i5nHI5agjXs=</dsig:DigestValue>
+        <dsig:DigestValue>KqEusYQ+NMgIw6w2JBw1JDp3+pY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -124,7 +124,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>KBwIBBUfHFXO8V6EEQRTcw22zII=</dsig:DigestValue>
+        <dsig:DigestValue>OzOh2We3/jPRoUA6Juw2iUvj8p8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -136,19 +136,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>1MaNV6iBl8frk7EqZafQNLrk70E=</dsig:DigestValue>
+        <dsig:DigestValue>9L1hEWtDwTUMybCFvU3YfNS4Lns=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FarseerPhysicsXNA.dll" size="363520">
-      <assemblyIdentity name="FarseerPhysicsXNA" version="3.3.4726.15277" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="FarseerPhysicsXNA" version="3.3.4727.40709" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>pIi1AurTt0OsdslpuOVAt2LXR8g=</dsig:DigestValue>
+        <dsig:DigestValue>t3SlMM7+vDhYF4Vm24R8ZuHvJzE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -165,14 +165,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VoodooBoyGame.exe" size="61952">
-      <assemblyIdentity name="VoodooBoyGame" version="1.0.4726.16513" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VoodooBoyGame.exe" size="64000">
+      <assemblyIdentity name="VoodooBoyGame" version="1.0.4728.43090" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>/ewC9CQ1d4H2VvrhQ5eMYJtbP9U=</dsig:DigestValue>
+        <dsig:DigestValue>hYpX1NYDBXYo9jXdxtgPFvgYtJE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -230,6 +230,15 @@
       <dsig:DigestValue>iS4OjikEvFVJskcEsqcdTTQvIx4=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Content\Characters\Victor\falling.xnb" size="1326">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yHZQ5J/PzSp5WyRS/kU7htjGmR0=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Content\Characters\Victor\foot.xnb" size="24523">
     <hash>
       <dsig:Transforms>
@@ -255,6 +264,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>wO5oW4j4WS5yRteosFQZ8LWs0e0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Characters\Victor\jumping.xnb" size="1588">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>55jzS8193PHVIFW22Mex93JkgAE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Characters\Victor\left-arm.xnb" size="53087">
@@ -320,13 +338,13 @@
       <dsig:DigestValue>tkhOwKr19RS0I51lwwiZzEF1/N0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\Fonts\DebugBuild.xnb" size="13998">
+  <file name="Content\Fonts\DebugBuild.xnb" size="12206">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>hLIO3Vo9hbsCNbJZpVBS4MOHEKw=</dsig:DigestValue>
+      <dsig:DigestValue>rr7dnAv8RU6KIXyoH9O/7lelo7Y=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Fonts\ToolBarText.xnb" size="23214">
@@ -383,13 +401,13 @@
       <dsig:DigestValue>XPHEvNqgpBc2V7m+tW1u4lVLEW4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\Levels\Demo\level.gleed" size="25929">
+  <file name="Content\Levels\Demo\level.gleed" size="25755">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>y8pkkkXUKaRpB1gRy75ULfE8qAc=</dsig:DigestValue>
+      <dsig:DigestValue>mogJf6CUmkKKFTuvUVhmSSR/V0c=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Levels\Demo\mountain.xnb" size="5962875">

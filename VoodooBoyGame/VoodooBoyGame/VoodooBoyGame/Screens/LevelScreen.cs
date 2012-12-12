@@ -15,6 +15,7 @@ using Microsoft.Xna.Framework.Input;
 using FarseerPhysics.Common;
 using FarseerPhysics;
 using FarseerPhysics.DebugViews;
+using System.Text;
 
 namespace VoodooBoyGame
 {
@@ -29,7 +30,7 @@ namespace VoodooBoyGame
 
         private RenderSystem renderSystem;
         private BodyPhysicsSystem physicsSystem;
-        private WalkableBodyPhysicsSystem walkableBodySystem;
+        private WalkableBodySystem walkableBodySystem;
         private AnimationUpdateSystem animationUpdateSystem;
         private AnimationRenderSystem animationRenderSystem;
         private PlayerControlSystem playerControlSystem;
@@ -75,7 +76,7 @@ namespace VoodooBoyGame
             LevelName = level;
             Global.Camera.Position = new Vector2(800, 444);
             Global.Camera.Zoom = 1.0f;
-            Global.Camera.MinPosition = new Vector2(783, 128);
+            Global.Camera.MinPosition = new Vector2(783, 400);
             Global.Camera.MaxPosition = new Vector2(2400, 400);
         }
 
@@ -103,7 +104,7 @@ namespace VoodooBoyGame
 
             renderSystem = systemManager.SetSystem(new RenderSystem(), ExecutionType.Draw);
             physicsSystem = systemManager.SetSystem(new BodyPhysicsSystem(PhysicsWorld), ExecutionType.Update);
-            walkableBodySystem = systemManager.SetSystem(new WalkableBodyPhysicsSystem(PhysicsWorld), ExecutionType.Update);
+            walkableBodySystem = systemManager.SetSystem(new WalkableBodySystem(PhysicsWorld), ExecutionType.Update);
             animationUpdateSystem = systemManager.SetSystem(new AnimationUpdateSystem(), ExecutionType.Update);
             animationRenderSystem = systemManager.SetSystem(new AnimationRenderSystem(), ExecutionType.Draw);
             playerControlSystem = systemManager.SetSystem(new PlayerControlSystem(), ExecutionType.Update);
@@ -205,7 +206,7 @@ namespace VoodooBoyGame
             Global.Camera.Rotation = 0.0f;
 
             Entity e = EntityWorld.CreateEntity("Victor", PhysicsWorld);
-            Global.Camera.TrackingBody = e.GetComponent<WalkableBodyComponent>().Body;
+            Global.Camera.TrackingBody = e.GetComponent<WalkingComponent>().Body;
             e.Refresh();
         }
 
@@ -243,8 +244,17 @@ namespace VoodooBoyGame
             layers["LAYER2"].Draw();
             layers["LAYER3"].Draw();
 
+            Entity victor = EntityWorld.TagManager.GetEntity("PLAYER");
+
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("WalkingBody State Test");
+            sb.AppendLine("----------------------\n");
+            sb.AppendLine(String.Format("On Ground? {0}", victor.GetComponent<WalkingComponent>().OnGround));
+            sb.AppendLine(String.Format("WalkingState: {0}", victor.GetComponent<WalkingComponent>().CurrState));
+            sb.AppendLine(String.Format("Camera Position:\n{0}", Global.Camera.Position));
+
             Global.SpriteBatch.Begin();
-            //Global.SpriteBatch.DrawString(Global.Fonts["DebugBuild"], String.Format("Level Testbed\n---------------------\n\nLSTICK - Move Camera\nLTRIGGER / RTRIGGER(A / Z) - Rotate Camera\nRSTICKUP/DOWN(PAGEUP/DOWN) - Zoom +/-\nA(SPACE) - Spawn balls at Center Screen\nB(ESC) - Back to Main Menu\n\nZoom Level: {0}\nCamera Position: {1}\nPhysics Bodies: {2}\nEntities: {3}", Global.Camera.Zoom, Global.Camera.Position, PhysicsWorld.BodyList.Count-6, EntityWorld.EntityManager.ActiveEntitiesCount), new Vector2(10, 10), Color.Black);
+            Global.SpriteBatch.DrawString(Global.Fonts["DebugBuild"], sb, new Vector2(10, 10), Color.White);
             Global.SpriteBatch.End();
 
             // calculate the projection and view adjustments for the debug view

@@ -20,16 +20,18 @@ namespace VoodooBoyGame
             {
                 FarseerPhysics.Dynamics.World physics = (FarseerPhysics.Dynamics.World)args[0];
 
-                e.Group = "PLAYER";
-                e.AddComponent(new WalkableBodyComponent(physics, new Vector2(400, 300), ConvertUnits.ToSimUnits(64), ConvertUnits.ToSimUnits(118), 2.0f));
+                e.Tag = "PLAYER";
+                e.AddComponent(new WalkingComponent(physics, new Vector2(400, 300), ConvertUnits.ToSimUnits(128), ConvertUnits.ToSimUnits(118), 10.0f));
 
                 TransformComponent transform = new TransformComponent();
                 transform.TransformOffset = new Vector2(0, 40);
                 e.AddComponent(transform);
 
-                AnimationPlayerComponent animation = new AnimationPlayerComponent();
+                AnimationComponent animation = new AnimationComponent();
                 animation.AddAnimation("resting", Global.Content.Load<Animation>("Characters/Victor/resting"));
                 animation.AddAnimation("running", Global.Content.Load<Animation>("Characters/Victor/running"));
+                animation.AddAnimation("jumping", Global.Content.Load<Animation>("Characters/Victor/jumping"));
+                animation.AddAnimation("falling", Global.Content.Load<Animation>("Characters/Victor/falling"));
                 animation.AnimationPlayer.StartAnimation("resting");
                 e.AddComponent(animation);
 
