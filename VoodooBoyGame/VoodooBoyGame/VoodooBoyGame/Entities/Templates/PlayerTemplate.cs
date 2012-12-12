@@ -21,7 +21,7 @@ namespace VoodooBoyGame
                 FarseerPhysics.Dynamics.World physics = (FarseerPhysics.Dynamics.World)args[0];
 
                 e.Tag = "PLAYER";
-                e.AddComponent(new WalkingComponent(physics, new Vector2(400, 300), ConvertUnits.ToSimUnits(128), ConvertUnits.ToSimUnits(118), 10.0f));
+                e.AddComponent(new WalkingComponent(physics, new Vector2(400, 300), ConvertUnits.ToSimUnits(64), ConvertUnits.ToSimUnits(118), 10.0f));
 
                 TransformComponent transform = new TransformComponent();
                 transform.TransformOffset = new Vector2(0, 40);

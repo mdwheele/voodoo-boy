@@ -110,32 +110,44 @@ namespace VoodooBoyGame
 
         public void StopMoving()
         {
-            motor.MotorSpeed = 0.0f;
-            prevWalkingState = currWalkingState;
-            currWalkingState = WalkingState.Resting;
+            if (OnGround && CurrState != WalkingState.Jumping)
+            {
+                motor.MotorSpeed = 0.0f;
+                prevWalkingState = currWalkingState;
+                currWalkingState = WalkingState.Resting;
+            }
         }
 
         public void MoveLeft()
         {
-            motor.MotorSpeed = -15.0f;
-            prevWalkingState = currWalkingState;
-            currWalkingState = WalkingState.WalkingLeft;
+            if (OnGround && CurrState != WalkingState.Jumping)
+            {
+                motor.MotorSpeed = -15.0f;
+                prevWalkingState = currWalkingState;
+                currWalkingState = WalkingState.WalkingLeft;
+            }
         }
 
         public void MoveRight()
         {
-            motor.MotorSpeed = 15.0f;
-            prevWalkingState = currWalkingState;
-            currWalkingState = WalkingState.WalkingRight;
+            if (OnGround && CurrState != WalkingState.Jumping)
+            {
+                motor.MotorSpeed = 15.0f;
+                prevWalkingState = currWalkingState;
+                currWalkingState = WalkingState.WalkingRight;
+            }
         }
 
         public void Jump()
         {
-            motor.MotorSpeed = 0.0f;
-            body.ApplyLinearImpulse(new Vector2(0, -150f));
+            if (OnGround && PrevState != WalkingState.Falling)
+            {
+                motor.MotorSpeed = 0.0f;
+                body.ApplyLinearImpulse(new Vector2(0, -150f));
 
-            prevWalkingState = currWalkingState;
-            currWalkingState = WalkingState.Jumping;
+                prevWalkingState = currWalkingState;
+                currWalkingState = WalkingState.Jumping;
+            }
         }
 
         public void AddThrust()

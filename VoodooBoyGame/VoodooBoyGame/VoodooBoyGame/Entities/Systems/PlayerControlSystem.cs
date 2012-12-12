@@ -34,34 +34,27 @@ namespace VoodooBoyGame
             {
                 WalkingComponent body = walkingComponent.Get(e);
 
-                if (body.OnGround && body.CurrState != WalkingState.Jumping)
+                //Walking Left, On Ground
+                if (input.IsHeldDown(Buttons.LeftThumbstickLeft))
                 {
-                    //Walking Left, On Ground
-                    if (input.IsHeldDown(Buttons.LeftThumbstickLeft))
-                    {
-                        body.MoveLeft();
-                    }
-
-                    //Walking Right, On Ground
-                    if (input.IsHeldDown(Buttons.LeftThumbstickRight))
-                    {
-                        body.MoveRight();
-                    }
-                    
-                    if (!input.IsHeldDown(Buttons.LeftThumbstickRight) && !input.IsHeldDown(Buttons.LeftThumbstickLeft))
-                    {
-                        body.StopMoving();
-                    }
-
-                    //Jump
-                    if (input.IsPressed(Buttons.A))
-                    {
-                        body.Jump();
-                    }
+                    body.MoveLeft();
                 }
-                else
-                {
 
+                //Walking Right, On Ground
+                if (input.IsHeldDown(Buttons.LeftThumbstickRight))
+                {
+                    body.MoveRight();
+                }
+                    
+                if (!input.IsHeldDown(Buttons.LeftThumbstickRight) && !input.IsHeldDown(Buttons.LeftThumbstickLeft))
+                {
+                    body.StopMoving();
+                }
+
+                //Jump
+                if (input.IsPressed(Buttons.A))
+                {
+                    body.Jump();
                 }
             }
         }
