@@ -87,7 +87,7 @@ namespace VoodooBoyGame
 
             if (physicsWorld == null)
             {
-                physicsWorld = new World(new Vector2(0f, 10f));
+                physicsWorld = new World(new Vector2(0f, 9.8f));
             }
             else
             {
@@ -252,6 +252,8 @@ namespace VoodooBoyGame
             sb.AppendLine(String.Format("On Ground? {0}", victor.GetComponent<WalkingComponent>().OnGround));
             sb.AppendLine(String.Format("WalkingState: {0}", victor.GetComponent<WalkingComponent>().CurrState));
             sb.AppendLine(String.Format("Camera Position:\n{0}", Global.Camera.Position));
+            sb.AppendLine(String.Format("Linear Velocity: {0}", victor.GetComponent<WalkingComponent>().Body.LinearVelocity));
+            sb.AppendLine(String.Format("Jump Counter: {0}", victor.GetComponent<WalkingComponent>().MultipleJumpCounter));
 
             Global.SpriteBatch.Begin();
             Global.SpriteBatch.DrawString(Global.Fonts["DebugBuild"], sb, new Vector2(10, 10), Color.White);
@@ -266,7 +268,7 @@ namespace VoodooBoyGame
                    Matrix.CreateScale(Global.Camera.Zoom) *
                    Matrix.CreateRotationZ(Global.Camera.Rotation);
             
-            //debug.RenderDebugData(ref projection, ref view);
+            debug.RenderDebugData(ref projection, ref view);
         }
     }
 }

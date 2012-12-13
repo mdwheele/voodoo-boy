@@ -32,7 +32,7 @@ namespace VoodooBoyGame
         double rumbleRatio;
         float leftMotor;
         float rightMotor;
-
+        
         public InputHelper()
         {
             lastGamepadState = currentGamepadState = new GamePadState();

@@ -91,11 +91,26 @@ namespace VoodooBoyGame
              * 
              * Set falling state if LinearVelocity.Y > 0 and we're in the jumping state.
              */
-
             if (!walkableBodyMapper.Get(e).OnGround && walkableBodyMapper.Get(e).Body.LinearVelocity.Y > 0)
             {
                 walkableBodyMapper.Get(e).PrevState = walkableBodyMapper.Get(e).CurrState;
                 walkableBodyMapper.Get(e).CurrState = WalkingState.Falling;
+            }
+
+            /**
+             * RESET MULTIPLE JUMP COUNTER IF ON GROUND
+             */
+            if (walkableBodyMapper.Get(e).OnGround)
+            {
+                walkableBodyMapper.Get(e).MultipleJumpCounter = 0;
+            }
+
+            /** 
+             * JUMPING AIR DRAG
+             */
+            if (!walkableBodyMapper.Get(e).OnGround)
+            {
+                walkableBodyMapper.Get(e).Body.ApplyForce(-Vector2.UnitX * walkableBodyMapper.Get(e).Mass * walkableBodyMapper.Get(e).Body.LinearVelocity.X * 0.25f);
             }
 
             /**

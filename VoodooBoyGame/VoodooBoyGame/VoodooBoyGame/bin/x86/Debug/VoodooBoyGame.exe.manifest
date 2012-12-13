@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Game.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="VoodooBoyGame" version="1.0.4729.3956" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="VoodooBoyGame" version="1.0.4730.2607" language="neutral" processorArchitecture="x86" />
     <commandLine file="VoodooBoyGame.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -100,7 +100,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>kLvMDjCC/2s4t0PptjweePjmfY4=</dsig:DigestValue>
+        <dsig:DigestValue>FH/blboiius4rlGCJgBOMy8O16c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -165,14 +165,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VoodooBoyGame.exe" size="64000">
-      <assemblyIdentity name="VoodooBoyGame" version="1.0.4729.3956" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VoodooBoyGame.exe" size="66048">
+      <assemblyIdentity name="VoodooBoyGame" version="1.0.4730.2607" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>uKE28CP+gddzFIGpbpukDOQdXJQ=</dsig:DigestValue>
+        <dsig:DigestValue>w/N4FwnVuNsiL62O0st2FlxwyBs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

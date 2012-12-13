@@ -21,7 +21,9 @@ namespace VoodooBoyGame
                 FarseerPhysics.Dynamics.World physics = (FarseerPhysics.Dynamics.World)args[0];
 
                 e.Tag = "PLAYER";
-                e.AddComponent(new WalkingComponent(physics, new Vector2(400, 300), ConvertUnits.ToSimUnits(64), ConvertUnits.ToSimUnits(118), 10.0f));
+
+                WalkingComponent walking = new WalkingComponent(physics, new Vector2(400, 300), ConvertUnits.ToSimUnits(64), ConvertUnits.ToSimUnits(118), 30.0f);
+                e.AddComponent(walking);
 
                 TransformComponent transform = new TransformComponent();
                 transform.TransformOffset = new Vector2(0, 40);
@@ -34,11 +36,7 @@ namespace VoodooBoyGame
                 animation.AddAnimation("falling", Global.Content.Load<Animation>("Characters/Victor/falling"));
                 animation.AnimationPlayer.StartAnimation("resting");
                 e.AddComponent(animation);
-
-                PlayerComponent player = new PlayerComponent();
-
-                e.AddComponent(player);
-
+                
                 return e;
             }
             else
