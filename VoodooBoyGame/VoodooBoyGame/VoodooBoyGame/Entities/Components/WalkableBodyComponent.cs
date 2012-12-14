@@ -49,6 +49,11 @@ namespace VoodooBoyGame
         WalkingState prevWalkingState;
         WalkingState currWalkingState;
 
+        public Vector2 Position
+        {
+            get { return (body.Position + wheel.Position) / 2; }
+        }
+
         public Body Body
         {
             get { return body; }

@@ -139,6 +139,9 @@
   <ItemGroup>
     <Compile Include="Entities\Components\BodyComponent.cs" />
     <Compile Include="Entities\Components\AnimationComponent.cs" />
+    <Compile Include="Entities\Components\ScriptComponent.cs" />
+    <Compile Include="Entities\Components\Scripts\ChasePlayerScript.cs" />
+    <Compile Include="Entities\Components\Scripts\Script.cs" />
     <Compile Include="Entities\Components\WalkableBodyComponent.cs" />
     <Compile Include="Entities\Components\ExpiresComponent.cs" />
     <Compile Include="Entities\Components\TextureComponent.cs" />
